@@ -3,6 +3,7 @@
 import os
 import sys
 
+from dotenv import load_dotenv
 
 def main():
     """Run administrative tasks."""
@@ -15,6 +16,8 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+
+    load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
     execute_from_command_line(sys.argv)
 
 
