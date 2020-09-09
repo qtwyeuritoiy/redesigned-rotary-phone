@@ -4,12 +4,12 @@ import os
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-TARGET_URL = 'https://www.videocardbenchmark.net/gpu_list.php'
-FILENAME = 'videocardbenchmark_gpu_list.csv'
+CPU_URL = 'https://www.cpubenchmark.net/cpu_list.php'
+GPU_URL = 'https://www.videocardbenchmark.net/gpu_list.php'
 
-def scrape_gpu() -> str:
+def scrape(website:str, filename:str) -> str:
     # a function that scrapes a website, saves as CSV format, and returns the path to file
-    with urlopen(TARGET_URL) as website:
+    with urlopen(website) as website:
         soup = BeautifulSoup(website, 'html.parser')
         table = soup.find('table', attrs={'id' : 'cputable', 'class': 'cpulist'})
         headers = [header.text for header in table.find('thead').find_all('th')]
@@ -18,7 +18,7 @@ def scrape_gpu() -> str:
         for row in table.find_all('tr'):
             rows.append([val.text.replace(',', '').replace('NA', '') for val in row.find_all('td')])
 
-        with open(FILENAME, 'w') as f:
+        with open(filename, 'w', encoding='utf-8', newline='') as f:
             writer = csv.writer(f)
             writer.writerow(headers)
             writer.writerows(row for row in rows if row)
