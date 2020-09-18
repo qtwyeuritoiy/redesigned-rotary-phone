@@ -103,24 +103,47 @@ h3{
 		<a class="navbar-brand" href ="#"><h1>Compee</h1></a>
 
 		<!--Search Bar -->
-		<div class="input-group input-focus ml-5 pl-4 mr-5" >
+		<div class="input-group input-focus ml-5 pl-4" >
 			<input type="search" placeholder="Search" class="form-control border-left-0">
 			<div class="input-group-append">
 				<span class="input-group-text bg-white"><i class="fa fa-search"></i></span>
 			</div>
 		</div>
 		
-		<ul class="navbar-nav m-1 pt-1 ml-5">
-		
-            <li class="nav-item mt-2">
-				<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal" style="color: white; font-size:1.25rem" >Log&nbsp;In
+		<ul class="navbar-nav m-1 pt-1">
+			<li class="nav-item">
+				<a class="nav-link ml-4 mr-3" href="#" data-toggle="popover" data-placement="bottom" title="Notification" data-content="This is the notification" >
+					<span class=" fa-stack " id="numberBadge" data-count="1">
+						<span style="font-size: 1.5rem; color: white;">
+							<i class="fa fa-bell" ></i>
+						</span>
+					  </span>
+					
 				</a>
 			</li>
-			<li class="nav-item ml-4 mt-2 mr-2">
-				<div class="vl"  ></div>
+			<li class="nav-item">
+				<a class="nav-link mr-4" href="#" >
+					<span class=" fa-stack " id="numberBadge2" data-count="1">
+						<span style="font-size: 1.5rem; color: white;">
+							<i class="fa fa-shopping-cart"></i>
+						</span>
+					  </span>
+					
+				</a>
+			</li>
+			<li class="nav-item ml-3 mt-2 mr-4">
+				<div class="vl"></div>
+			</li>
+		
+            <li class="nav-item mr-0">
+				<a class="nav-link" href="#">
+					<span style="font-size: 1.5rem; color:white; ">
+						<i class="fa fa-user"></i>
+					</span>
+				</a>
 			</li>
 			<li class="nav-item mr-5 mt-2">
-				<a class="nav-link" href="#" data-toggle="modal" data-target="#registerModal" style="color: white; font-size:1.25rem" >Register
+				<a class="nav-link" href="#" style="color: white; font-size:1.25rem" >Username
 				</a>
 			</li>
 		</ul>
@@ -275,10 +298,6 @@ h3{
 		<div class="modal-body" style="margin-left: 3rem; margin-right: 3rem;">
 			<form action="/action_page.php" style="font-family: 'Muli'">
 				<div class="form-group">
-					<label for="email">Username:</label>
-					<input type="email" class="form-control" style="border-color: #26B8FF;" placeholder="Enter email" id="email">
-				  </div>
-				<div class="form-group">
 				  <label for="email">Email address:</label>
 				  <input type="email" class="form-control" style="border-color: #26B8FF;" placeholder="Enter email" id="email">
 				</div>
@@ -291,7 +310,7 @@ h3{
 					<input type="password" class="form-control" style="border-color: #26B8FF;" placeholder="Enter password again" id="pwd">
 				  </div>
 			</form>
-			<button type="submit" class="btn btn-primary" style ="width:100%; margin-top: 2rem;">Submit</button>
+			<button type="submit" class="btn btn-primary" style ="width:100%; margin-top: 3rem;">Submit</button>
 			<div style="width:100%; text-align: center; margin-top: 1rem;">
 				<p>Have an account? Log in <span><a href="#" id="register" style="color: #57B1FF;">here</a></span>
 				</p></div>
@@ -327,3 +346,5 @@ h3{
 	 });
 
 	</script>
+
+
