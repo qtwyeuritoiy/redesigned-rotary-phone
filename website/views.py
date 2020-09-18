@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
-    return HttpResponse("This is a placeholder text.")
+def home(request):
+   return render(request, 'home_screen_template.html', {})
