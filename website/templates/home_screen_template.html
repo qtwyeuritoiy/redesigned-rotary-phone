@@ -304,12 +304,6 @@ h3{
   <script>
 	$(document).ready(function(){
 	  $('[data-toggle="popover"]').popover();
-	  if($("#numberBadge").attr("data-count") > 0){
-			 $("#numberBadge").addClass('p1');
-	}
-	if($("#numberBadge2").attr("data-count") > 0){
-			 $("#numberBadge2").addClass('p1');
-	}
 
 });
 	$("#login").click(function(){
@@ -320,10 +314,4 @@ h3{
 		  $("#registerModal").modal("hide");
 		  $("#loginModal").modal("show");
 	 });
-	 $("#numberBadge").click(function(){
-		$("#numberBadge").attr("data-count",0);
-		$("#numberBadge").removeClass('p1');
-	
-	 });
-
 	</script>
