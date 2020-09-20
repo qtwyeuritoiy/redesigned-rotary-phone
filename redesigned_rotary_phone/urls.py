@@ -16,12 +16,9 @@ Including another URLconf
 from django.apps import apps
 from django.contrib import admin
 from django.urls import include, path
-from website import views
 urlpatterns = [
-   
+
     path('admin/', admin.site.urls),
-    path('', include('website.urls')),
+    path('', include(apps.get_app_config('oscar').urls[0])),
     path('i18n/', include('django.conf.urls.i18n')),
-    path('config/', include(apps.get_app_config('oscar').urls[0])),
-  
 ]

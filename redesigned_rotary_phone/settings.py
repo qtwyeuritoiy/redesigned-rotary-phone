@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'website',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -101,12 +100,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'redesigned_rotary_phone.urls'
 
-TEMPLATES_DIR = os.path.join( os.path.join(BASE_DIR,'website', 'templates'))
+location = lambda x: os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', x)
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS':[TEMPLATES_DIR],
+        'DIRS': [
+            location('templates'), # templates directory of the project
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
