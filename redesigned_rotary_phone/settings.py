@@ -99,14 +99,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'redesigned_rotary_phone.urls'
-
-location = lambda x: os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', x)
+TEMPLATES_DIR = os.path.join( os.path.join(BASE_DIR, 'templates'))
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            location('templates'), # templates directory of the project
+            TEMPLATES_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
