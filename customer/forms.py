@@ -4,6 +4,8 @@ from django.contrib.auth.models import Permission
 from oscar.apps.customer.forms import EmailUserCreationForm
 from oscar.apps.partner.models import Partner
 
+from oscar_accounts import models, codes, names
+
 class UserCreationForm(EmailUserCreationForm):
     partner_check = forms.BooleanField(label='I want to sell items', required=False)
 
@@ -14,6 +16,14 @@ class UserCreationForm(EmailUserCreationForm):
     def save(self, commit=True):
         is_partner = self.cleaned_data.get('partner_check', False)
         user = super().save()
+
+        account_type = models.AccountType.objects.get(name=names.DEFERRED_INCOME)
+
+        user_account = models.Account.objects.create(primary_user=user, credit_limit=None)
+        user_account.code = codes.generate()
+        user_account.account_type = account_type
+        user_account.save()
+
         if is_partner:
             partner = Partner.objects.create(name=user.email)
             partner.users.add(user)
