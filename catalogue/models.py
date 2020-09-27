@@ -1,67 +1,44 @@
-"""
-Custom models for the project.
-"""
-
+# Custom Product models for the project.
 from django.db import models
-
 from oscar.apps.catalogue.abstract_models import AbstractProduct
+# Custom CPU Model
 
-class CPUProduct(AbstractProduct):
-    model_name = models.CharField(max_length = 50)
-    manufacturer = models.CharField(max_length = 50)
-    socket_type = models.CharField(max_length = 50) #LGA 1151, AM4, TR4
-    clock_speed = models.IntegerField() #Measured in MHz
-    core_count = models.IntegerField()
-    tdp_rating = models.IntegerField() #Measured in W
-    cache_capacity = models.IntegerField() #Measured in KB
+class cpu(models.Model):
+    #cpu_Brand = models.CharField()
+    cpu_Name = models.CharField(max_length=255)
+    cpu_Mark = models.IntegerField()
+    cpu_Rank = models.IntegerField()
+    cpu_Value = models.IntegerField()
+    cpu_Price = models.IntegerField()
 
-class MotherboardProduct(AbstractProduct):
-    model_name = models.CharField(max_length = 50)
-    manufacturer = models.CharField(max_length = 50)
-    form_factor = models.CharField(max_length = 50) #ATX, Micro ATX, Mini ITX
-    socket_type = models.CharField(max_length = 50) #LGA 1151, AM4, TR4
-    chipset_type = models.CharField(max_length = 50) #AMD B450, AMD X470, Intel Z370, Intel B460
+'''
+# Create your models here.
+class item_Category(models.Model):
 
-class GPUProduct(AbstractProduct):
-    model_name = models.CharField(max_length = 50)
-    manufacturer = models.CharField(max_length = 50)
-    core_count = models.CharField(max_length = 50)
-    clock_speed = models.IntegerField() #Measured in MHz
-    tdp_rating = models.IntegerField()  #Measured in W
-    ram_capacity = models.IntegerField() #Measured in MB
+    class ItemNames(models.TextChoices):
+        PROCESSOR = 'Processor'
+        GRAPHICS_CARD = 'Graphics Card'
+        RAM = 'RAM'
+        MOTHERBOARD = 'Motherboard'
+        STORAGE = 'Storage'
+        POWER_SUPPLY = 'Power Supply'
 
-class RAMProduct(AbstractProduct):
-    model_name = models.CharField(max_length = 50)
-    manufacturer = models.CharField(max_length = 50)
-    socket_type = models.CharField(max_length = 50) #DDR4, DDR3
-    capacity = models.IntegerField() #Measured in MB
-    clock_speed = models.IntegerField() #Measured in MHz
-    clock_timing = models.CharField(max_length = 50)
+    item_CategoryName = models.CharField(max_length = 14, choices = ItemNames.choices, default= ItemNames.PROCESSOR)
 
-class SSDProduct(AbstractProduct):
-    model_name = models.CharField(max_length = 50)
-    manufacturer = models.CharField(max_length = 50)
-    form_factor = models.CharField(max_length = 50) #2.5", M.2 2280, USB
-    interface_type = models.CharField(max_length = 50) #SATA 3, NVMe
-    capacity = models.IntegerField() #Measured in GB
-    flash_type = models.CharField(max_length = 50) #MLC, TLC, QLC
+class Item(models.Model):
+    item_UniqueCode = models.CharField(max_length=30)
+    item_Name = models.CharField(max_length=30)
+    item_Category = models.ForeignKey(item_Category, on_delete=models.CASCADE)
+    item_Description = models.TextField()
 
-class HDDProduct(AbstractProduct):
-    model_name = models.CharField(max_length = 50)
-    manufacturer = models.CharField(max_length = 50)
-    form_factor = models.CharField(max_length = 50) #2.5", 3.5", USB
-    interface_type = models.CharField(max_length = 50) #SATA 2, SATA 3
-    capacity = models.IntegerField() #Measured in GB
-    rpm = models.IntegerField()
-    cache = models.IntegerField() #Measured in MB
+    class ItemConditionName(models.TextChoices):
+        NEW = 'New'
+        BNIB = 'Brand New in Box'
+        USED = 'Old'
+        MOTHERBOARD = 'Motherboard'
 
-class PowerSupplyProduct(AbstractProduct):
-    model_name = models.CharField(max_length = 50)
-    manufacturer = models.CharField(max_length = 50)
-    form_factor = models.CharField(max_length = 50) #ATX, SFX, ATX12V
-    max_power_out = models.IntegerField() #Measured in W
-    efficiency = models.CharField(max_length = 50) #80 PLUS Bronze, 80 PLUS Gold
-    modularity = models.CharField(max_length = 50) #Non-modular, Semi-modular, Full-modular
-
-
-from oscar.apps.catalogue.models import *  # noqa isort:skip
+    item_Condition = models.CharField(max_length = 30, choices = ItemConditionName.choices, default= ItemConditionName.BNIB)
+    item_CrawlerRowNumber = models.IntegerField()
+'''
+# Put as last line
+from oscar.apps.catalogue.models import *
