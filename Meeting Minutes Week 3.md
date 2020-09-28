@@ -1,16 +1,19 @@
-Meeting Minutes 
+# Meeting Minutes 
 
-Program/Area : Agile Development Project
-Meeting purpose : Sprint Planning for week 3
-Meeting Date : 12 September 2020
-Meeting time : 1.15pm-2pm
-Meeting Location : Online-Skype
-Meeting Facilitator : Shania Frincella
-Attendees : - Kim JiHoon 
-            - Cherry Magdalena 
-            - Michael
-            - Benedict Sim
-Minutes Issued By: Shania Frincella
+- Program/Area : Agile Development Project
+- Meeting purpose : Sprint Planning for week 3
+- Meeting Date : 12 September 2020
+- Meeting time : 1.15pm-2pm
+- Meeting Location : Online-Skype
+- Meeting Facilitator : Shania Frincella
+- Attendees : 
+  - Kim JiHoon 
+  - Cherry Magdalena 
+  - Michael
+  - Benedict Sim
+- Minutes Issued By: Shania Frincella
+
+# Tasks
 
 |----------------------------------------------------------------------------------------------------|
 | Task                                                                     | Owner      | Due Date   |
@@ -24,7 +27,7 @@ Minutes Issued By: Shania Frincella
 | Create product listing view, product detail view and shopping cart view  | Cherry     | 18/09/2020 |
 |----------------------------------------------------------------------------------------------------|
 
-Decision Made:
+# Decision Made
 1. Saving crawler informations 
   - Using SQLite instead of CSV to save data from the crawler
 2. Crawler strategy
@@ -32,6 +35,6 @@ Decision Made:
 3. Price recommendation system
   - The price depreciation rate will be 5% per month
   
-Discussion:
+# Discussion
 NONE
 
