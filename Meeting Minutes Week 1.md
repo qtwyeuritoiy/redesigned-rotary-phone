@@ -1,4 +1,4 @@
-# Sprint Planning Week 1
+# Meeting Minutes 
 
 - Program/Area : Agile Development Project
 - Meeting purpose : Sprint Planning for week 2
