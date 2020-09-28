@@ -116,7 +116,7 @@
             <td rowspan=1>Shania Frincella (Scrum Master) </td>
             <td>What will you work today? </td>
             <td>-</td>
-            <td>-</td>
+            <td>Research further on how the algorithm for the product depreciation works and where to get pricing list</td>
             <td>Researching whether we need to use js or not as an obstacle found in converting js canvas to actual data points by the developer.</td>
             <td>-</td>
             <td>-</td>
