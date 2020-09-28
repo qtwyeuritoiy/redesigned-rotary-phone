@@ -27,10 +27,10 @@
 1. Prioritize the backend first before doing the frontend
    - In this sprint, we are targeting to finish the database, crawler setup and recommendation system.
 2. Restricting the chat system to an email system.
-3.Standardization of database field 
-  - Specific fields from the database that are standardized globally so it will not be needed to enter manually. 
-    For example, the CPU has specific core counts, threads and other functionalities. These fields do not need to 
-    be inputted by the users as to make it a simpler user experience.
+3. Standardization of database field 
+   - Specific fields from the database that are standardized globally so it will not be needed to enter manually. 
+     For example, the CPU has specific core counts, threads and other functionalities. These fields do not need to 
+     be inputted by the users as to make it a simpler user experience.
 
 # Discussions
 For future proofing, the development team is considering to lower the time complexity. This time complexity is related to the crawler when put different scenarios:
