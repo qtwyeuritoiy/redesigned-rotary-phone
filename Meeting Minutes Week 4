@@ -17,8 +17,8 @@ Task | Owner | Due Date
 --- | --- | ---
 Testing crawler and database  | Michael |25/09/2020 |
 Recommendation system, crawler and database | Benedict|25/09/2020 |
-Payment Process, all features that needs database| Kim JiHoon|25/09/2020 |
-Modify existing django template| Cherry |25/09/2020 |
+Payment Process, all features that needs database|Kim JiHoon|25/09/2020 |
+Modify existing django template|Cherry|25/09/2020 |
 
 Decisions Made:
 1. Add one more crawler for product information to facilitate data retrieval from items database
