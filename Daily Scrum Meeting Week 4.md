@@ -1,4 +1,4 @@
-**Week 4** :  21 September 2020 - 26 September 2020   
+**Week 4** : 21 September 2020 - 26 September 2020
 
 <table>
     <thead>
@@ -42,26 +42,26 @@
             <td rowspan=3>Benedict (Developer) </td>
             <td rowspan=1>What did you do yesterday?</td>
             <td>-</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Created a new crawler for CPU information</td>
+            <td>Create the crawler for GPU information</td>
+            <td>Integrated crawler as an aspect for users to access in the UI</td>
+            <td>Integrating the Depreciation factors into the UI</td>
         </tr>
         <tr>
             <td rowspan=1>What will you work on today?</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Create the crawler for CPU Information</td>
+            <td>Create the crawler for GPU information</td>
+            <td>Work on integrating into UI with the relevant information</td>
+            <td>Integration of crawler as an aspect for users to access in the UI</td>
+            <td>Integrating all crawler, depreciation into the application</td>
         </tr>
         <tr>
             <td rowspan=1>Do you have any obstacles?</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Learning the oscar & Django Framework</td>
+            <td>Learning the oscar & Django Framework</td>
+            <td>Learning the oscar & Django Framework</td>
+            <td>Learning the oscar & Django Framework</td>
+            <td>Learning the oscar & Django Framework</td>
         </tr>
         <tr>
             <td rowspan=3>Cherry (UI Designer) </td>

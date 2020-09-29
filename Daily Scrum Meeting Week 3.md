@@ -1,4 +1,4 @@
-**Week 3** :  14 September 2020 - 18 September 2020    
+**Week 3** : 14 September 2020 - 18 September 2020
 
 <table>
     <thead>
@@ -43,25 +43,25 @@
             <td rowspan=1>What did you do yesterday?</td>
             <td>-</td>
             <td>Finalising the dashboard interface, finalising the product and item's UI listings (with a basic mockup)</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Finished up the backend Database and crawler integration into database.</td>
+            <td>Updated Database with Items, Depreciation and more information for recommendation engine.</td>
+            <td>Finalised the depreciation logic</td>
         </tr>
         <tr>
             <td rowspan=1>What will you work on today?</td>
             <td>Finalising the dashboard interface, finalising the product and item's UI listings (with a basic mockup)</td>
             <td>Continue on yesterday's tasks</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Fix major bug that occured with converting the crawler details into SQlite</td>
+            <td>Following up with the materials for recommendation engine and proceeding with the integration required.</td>
+            <td>Following up on the bug that was ocurring during the integration for crawler.</td>
         </tr>
         <tr>
             <td rowspan=1>Do you have any obstacles?</td>
             <td>Oscar's limitations and ability to modify the source codes</td>
             <td>Other subjects requirements is slowing down</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sudden Django bug that prevents me from doing anything.</td>
+            <td>Learning the oscar & Django Framework</td>
+            <td>Learning the oscar & Django Framework</td>
         </tr>
         <tr>
             <td rowspan=3>Cherry (UI Designer) </td>
