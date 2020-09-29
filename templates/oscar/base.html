@@ -10,12 +10,30 @@
         <meta name="description" content="{% block description %}{% endblock %}" />
         <meta name="viewport" content="{% block viewport %}width=device-width{% endblock %}" />
         <meta name="robots" content="NOARCHIVE,NOCACHE" />
+        
         {% block favicon %}
             <link rel="shortcut icon" href="{% static "oscar/favicon.ico" %}" />
         {% endblock %}
 
         {# Block where global CSS will go. #}
-        {% block styles %}{% endblock %}
+        <style>
+            #id_q{
+                      width: 550px !important;
+                  }
+           #id_registration-partner_check{
+                width: 2rem;
+                height: 2rem;
+                margin-top: -0.25rem;
+                margin-left: -1rem;
+        
+            }
+            a:link:hover{
+                text-decoration: none;
+            }
+       </style>
+        {% block styles %}
+    
+        {% endblock %}
 
         {# Additional CSS - specific to certain pages #}
         {% block extrastyles %}{% endblock %}
@@ -26,6 +44,24 @@
             {# Default to using Google analytics #}
             {% include "oscar/partials/google_analytics.html" %}
         {% endblock %}
+        
+        <style>
+            
+           .breadcrumb{
+               background-color: white;
+           }
+           .btn-primary{
+               background-color:#A1D6FF;
+               color:black;
+               border-color: #72D1FF;
+           }
+            .nav-item{
+                background-color:#A1D6FF;
+               color:black;
+               border-color: #72D1FF;
+         }
+          
+        </style>
     </head>
 
     <body id="{% block body_id %}default{% endblock %}" class="{% block body_class %}default{% endblock %}">

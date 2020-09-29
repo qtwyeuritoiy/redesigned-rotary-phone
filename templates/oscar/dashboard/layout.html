@@ -28,14 +28,15 @@
 {% block layout %}
     {% block navbar %}
     <nav class="navbar navbar-static-top navbar-inverse navbar-accounts">
-        <div class="container-fluid">
-            <div class="navbar-header">
+        <div class="container-fluid" >
+            <div class="navbar-header" >
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-accounts">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span class="navbar-brand">{{ shop_name }}</span>
+                {% include "oscar/dashboard/partials/seller_dashboard_brand.html" %}
+                <!-- <span class="navbar-brand">{{ shop_name }}</span> -->
             </div>
             <div class="collapse navbar-collapse nav-accounts">
                 <ul class="nav navbar-nav navbar-right">
@@ -52,7 +53,7 @@
     {% block dashboard_nav %}
         {% dashboard_navigation user as nav_items %}
 
-        <nav class="navbar navbar-static-top navbar-inverse navbar-primary">
+        <nav class="navbar navbar-static-top navbar-inverse navbar-primary" >
             <div class="container-fluid dashboard">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-primary">
@@ -62,7 +63,7 @@
                     </button>
                 </div>
 
-                <div class="collapse navbar-collapse nav-primary">
+                <div class="collapse navbar-collapse nav-primary" >
                     <ul class="nav navbar-nav dashboard">
                         {% for item in nav_items %}
                         <li class="dropdown">
@@ -97,7 +98,7 @@
         </nav>
     {% endblock %}
 
-    <div class="container-fluid dashboard">
+    <div class="container-fluid dashboard" style="background-color: #FCFCFC;">
         {% block breadcrumbs %}
         <ul class="breadcrumb">
             <li><a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a></li>

@@ -2,7 +2,7 @@
 {% load category_tags %}
 {% load i18n %}
 
-<div class="navbar primary navbar-static-top navbar-inverse">
+<div class="navbar primary navbar-static-top navbar-inverse" style = "background-color: white; border-color: white;">
     <div class="container-fluid">
         <div class="navbar-header pull-right">
             {# This is used in mobile view #}
@@ -14,6 +14,8 @@
                 </span>
             </a>
         </div>
+        
+        {% include "oscar/partials/search.html" %}
 
         <a class="btn btn-default navbar-btn btn-cart navbar-right visible-xs-inline-block" href="{% url 'basket:summary' %}">
             <i class="icon-shopping-cart"></i>
@@ -33,10 +35,11 @@
 
 
         <div class="navbar-collapse primary-collapse collapse">
+            <!--
             {% block nav_dropdown %}
                 <ul id="browse" class="nav navbar-nav">
-                    <li class="dropdown active {% if expand_dropdown %}open{% endif %}">
-                        <a href="#" class="dropdown-toggle" {% if not expand_dropdown %} data-toggle="dropdown"{% endif %}>
+                    <li class="dropdown active {% if expand_dropdown %}open{% endif %}" >
+                        <a href="#" class="dropdown-toggle"  {% if not expand_dropdown %} data-toggle="dropdown"{% endif %}>
                             {% trans "Browse store" %}
                             <b class="caret"></b>
                         </a>
@@ -69,7 +72,11 @@
                     {% endblock %}
                 </ul>
             {% endblock %}
-            {% include "oscar/partials/search.html" %}
-        </div><!-- /navbar-collapse -->
+            -->
+
+        </div>
+        <!--/navbar-collapse-->
+    
+
     </div>
 </div><!-- /navbar -->
