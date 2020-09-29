@@ -3,14 +3,17 @@
 {% load category_tags %}
 
 {% block layout %}
-
+{% include "oscar/partials/nav_accounts.html" %}
     <header class="header container-fluid">
         <div class="page_inner">
+            
             <div class="row">
-                {% include "oscar/partials/brand.html" %}
+                {% include "oscar/checkout/checkout_title.html" %}
             </div><!-- /row -->
         </div>
+        
         {% block checkout_nav %}{% endblock %}
+
     </header><!-- /header -->
 
     <div class="container-fluid page">
