@@ -1,9 +1,12 @@
 asgiref==3.2.10
 Babel==2.8.0
+beautifulsoup4==4.9.1
+bs4==0.0.1
 Django==3.0.10
 django-extra-views==0.13.0
 django-haystack==3.0b2
 django-oscar==2.1
+django-oscar-accounts==2.1
 django-phonenumber-field==3.0.1
 django-tables2==2.2.1
 django-treebeard==4.3.1
@@ -19,5 +22,6 @@ python-dotenv==0.14.0
 pytz==2020.1
 six==1.15.0
 sorl-thumbnail==12.6.3
+soupsieve==2.0.1
 sqlparse==0.3.1
 text-unidecode==1.3
