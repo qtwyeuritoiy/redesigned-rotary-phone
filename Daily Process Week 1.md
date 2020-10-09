@@ -11,7 +11,7 @@ Items Database|5|0|1|0|0|1|2
 Account Database|7|1|0|0|1|1|3
 Crawler Setup|9|1|1|1|1|1|5
 Wireframe|3|0|1|1|1|0|3
-**Total**|36|4|9|2|3|3|2|1
+**Total**|36|4|9|2|3|3|21
 
 Story|Points Hours
 ---|---
