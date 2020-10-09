@@ -1,7 +1,7 @@
 # Meeting Minutes 
 
 - Program/Area : Agile Development Project
-- Meeting purpose : Sprint Planning for week 2
+- Meeting purpose : Sprint Planning for week 1
 - Meeting Date : 29 August 2020
 - Meeting time : 1pm-2pm
 - Meeting Location : Online-Skype
@@ -17,7 +17,7 @@
 
 | Task                                          | Owner      | Due Date   |
 |-----------------------------------------------|------------|------------|
-| Automated testing of the database and crawler and create the ficticious data  | Michael    | 4/09/2020 |
+| Automated testing of the database and crawler and create the fictitious data  | Michael    | 4/09/2020 |
 | Crawler and Database Setup                    | Benedict   | 4/09/2020 |
 | Crawler and Database Setup                    | Kim JiHoon | 4/09/2020 |
 | Create the wireframe                          | Cherry     | 4/09/2020 |
