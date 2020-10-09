@@ -10,7 +10,7 @@ Product Detail View|5|0|1|2|2|0|5
 Shopping Cart View|3|0|0|0|1|2|3
 Database Integration|9						
 Crawler Setup |2|0|0|0|0|2|2
-**Total**|30|2|2|3|6|6|19
+**Total**|31|2|2|3|6|6|19
 
 Story|Points Hours
 ---|---
