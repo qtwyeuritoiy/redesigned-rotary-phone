@@ -25,10 +25,10 @@
 
 # Desicions Made
 1. Shania will be the scrum master and managed the priority of the user stories in the backlog. The user story prioritization will be arrange using the MoSCoW technique.
-2. Michael will be the tester and create the ficticious data.
+2. Michael will be the tester and create the fictitious data.
 3. Benedict and Kim will be the developer and managed the backend.
 4. Cherry will be the UI Designer and managed the front end.
 
 # Discussions
-1. Need a ficticious data in order to test the application.
-2. Need to find the algorith for depriciation, where to get pricing list.
+1. Need a fictitious data in order to test the application.
+2. Need to find the algorithm for depreciation, where to get pricing list.
