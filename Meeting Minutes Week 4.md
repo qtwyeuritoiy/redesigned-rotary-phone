@@ -1,7 +1,7 @@
 # Meeting Minutes 
 
 - Program/Area : Agile Development Project
-- Meeting purpose : Sprint Planning for week 4
+- Meeting purpose : Sprint planning week 3, Sprint Review and Retrospection week 2
 - Meeting Date : 19 September 2020
 - Meeting time : 1.35pm-2pm
 - Meeting Location : Online-Skype
