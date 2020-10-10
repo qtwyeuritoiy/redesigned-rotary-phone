@@ -108,7 +108,7 @@
             <td>I am going to continue drafting acceptance test.</td>
         </tr>
         <tr>
-            <td rowspan=1>Shania Frincella (Scrum Master) </td>
+            <td rowspan=1>Do you have any obstacles?</td>
             <td>-</td>
             <td>Need to learn automated testing tools.</td>
             <td>No prior experience in Django and automated testing in Python.</td>
@@ -116,7 +116,7 @@
             <td>-</td>
         </tr>
         <tr>
-            <td rowspan=1>Do you have any obstacles?</td>
+            <td rowspan=1>Shania Frincella (Scrum Master)</td>
             <td>What will you work today? </td>
             <td>Deciding how the algorithm for the product depreciation works and where to get pricing list </td>
             <td>-</td>
